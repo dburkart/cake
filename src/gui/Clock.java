@@ -1,5 +1,10 @@
-package gui;
+/**
+ * Little clock widget prototype. Nothing being done with this as of right now
+ * 
+ * @author Vladimir Hadzhiyski
+ */
 
+package gui;
 
 import java.awt.*;
 import java.awt.event.*;

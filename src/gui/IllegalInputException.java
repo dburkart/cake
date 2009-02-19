@@ -1,9 +1,12 @@
-package gui;
-/**An exception that is thrown if the input is not legal.
+/**
+ * An exception that is thrown if the input is not legal.
  * 
- * @author dsb3573 (Dana Burkart)
+ * @author Dana Burkart
  *
  */
+
+package gui;
+
 public class IllegalInputException extends Exception {
 	private static final long serialVersionUID = -6502474940244940604L;
 	private String message;

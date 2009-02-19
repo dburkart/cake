@@ -1,12 +1,11 @@
-package subsystem;
-
 /**
  * This class describes a simple date, with a day, month, and year and provides methods
  * for manipulation of dates.
  * 
- * @author Dana Burkart (dsb3573)
- *
+ * @author Dana Burkart
  */
+
+package subsystem;
 
 public class SimpleDate {
 	public int day, month, year;

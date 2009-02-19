@@ -1,14 +1,15 @@
+/**Filters the files to search for.  This is used when the user uses an OpenDialog or a SaveDialog.  This will filter by folders, and 
+ * display .cml files in the file browser.
+ * 
+ * @author Robert Middleton
+ *
+ */
+
 package gui;
 
 import java.io.File;
 import javax.swing.filechooser.FileFilter;
 
-/**Filters the files to search for.  This is used when the user uses an OpenDialog or a SaveDialog.  This will filter by folders, and 
- * display .cml files in the file browser.
- * 
- * @author rxm6930 (Robert Middleton)
- *
- */
 public class CakeFileChooser extends FileFilter {
 
 	/**Default constructor

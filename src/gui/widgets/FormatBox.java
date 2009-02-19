@@ -1,4 +1,11 @@
+/**
+ * A text box which will automatically format data.
+ * 
+ * @author Dana Burkart
+ */
+
 package gui.widgets;
+
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -6,12 +13,6 @@ import javax.swing.JTextField;
 
 import subsystem.SimpleDate;
 
-
-/**A text box which will automatically format data.
- * 
- * @author Dana Burkhart
- *
- */
 public class FormatBox extends JTextField implements KeyListener {
 	/**
 	 * 

@@ -1,5 +1,10 @@
-package gui;
+/**The add event dialog box.  
+ * 
+ * @author Robert Middleton
+ *
+ */
 
+package gui;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -12,12 +17,6 @@ import javax.swing.JPanel;
 import subsystem.Event;
 import subsystem.Period;
 
-
-/**The add event dialog box.  
- * 
- * @author rxm6930 (Robert Middleton)
- *
- */
 public class AddEventDialog extends EventDialog implements ActionListener{
 
 	public AddEventDialog(CakeGUI parent) {

@@ -1,10 +1,3 @@
-package subsystem;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Set;
-
 /**
  * This class is used to store, manage and organize all the Event objects
  * that are created in the calendar program.
@@ -14,10 +7,18 @@ import java.util.Set;
  * following format: YYYYMMDD.
  * each day array will have a capacity of 15 elements.
  * 
- * @author Hashem Assayari (hya4542)
- * @author Dana Burkart (dsb3573)
- * @author Robert Middleton (rxm6930)
+ * @author Hashem Assayari
+ * @author Dana Burkart
+ * @author Robert Middleton
  */
+
+package subsystem;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+import java.util.Set;
+
 class EventDatabase {
 
 	private HashMap<Integer, ArrayList<Event>> eventMap = 

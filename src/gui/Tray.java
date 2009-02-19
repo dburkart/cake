@@ -1,6 +1,12 @@
+/**
+ * This class will create an icon for the system tray as well as handle
+ * any notifications for the calendar.
+ * 
+ * @author Jack Zhang
+ *
+ */
+
 package gui;
-
-
 
 import java.awt.*;
 import java.awt.event.*;
@@ -10,15 +16,6 @@ import java.util.Calendar;
 
 import subsystem.Event;
 import subsystem.Period;
-
-
-/**
- * This class will create an icon for the system tray as well as handle
- * any notifications for the calendar.
- * 
- * @author jxz8072 (Jack Zhang)
- *
- */
 
 public class Tray implements ActionListener {
 	

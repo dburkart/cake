@@ -1,5 +1,10 @@
-package gui;
+/**
+ * Update event dialog.
+ * 
+ * @author Robert Middleton
+ */
 
+package gui;
 
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
@@ -12,11 +17,6 @@ import javax.swing.JPanel;
 import subsystem.Event;
 import subsystem.Period;
 
-/**Update event dialog.
- * 
- * @author rxm6930 (Robert Middleton)
- *
- */
 public class UpdateEventDialog extends EventDialog implements ActionListener{
 	
 

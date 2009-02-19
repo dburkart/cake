@@ -1,10 +1,11 @@
-package gui.widgets;
 /**
  * This is a widget for selecting a daily recurring event.
  * 
- * @author hashemassayari
+ * @author hashem assayari
  *
  */
+
+package gui.widgets;
 
 import java.awt.GridLayout;
 import javax.swing.BoxLayout;

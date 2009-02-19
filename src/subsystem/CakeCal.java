@@ -1,5 +1,12 @@
-package subsystem;
+/**
+ * This is the interface class for the 'process' component for the program. It 
+ * provides an interface for the world, and kind of encapsulates what a calendar
+ * is.
+ * 
+ * @author Dana Burkart
+ */
 
+package subsystem;
 
 import java.io.*;
 import java.text.SimpleDateFormat;
@@ -10,14 +17,6 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.*;
 
-
-/**
- * This is the interface class for the 'process' component for the program. It 
- * provides an interface for the world, and kind of encapsulates what a calendar
- * is.
- * 
- * @author Dana Burkart (dsb3573)
- */
 public class CakeCal {
 	//-- NL is a cross-platform line feed; it will work on any OS (in theory).
 	public static final String NL = System.getProperty("line.separator"); 	/**The new line seperator.  System-dependent*/

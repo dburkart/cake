@@ -1,6 +1,10 @@
+/**
+ * GUI wrapper for the Event class.
+ * 
+ * @author Dana Burkart
+ */
+
 package gui;
-
-
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -10,11 +14,6 @@ import java.awt.image.BufferedImage;
 
 import subsystem.Event;
 
-/**
- * @author dsb3573 (Dana Burkart)
- * 
- *	GUI wrapper for the Event class.
- */
 public class EventShape {
 	//-- Public data
 	public Event event;

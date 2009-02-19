@@ -1,5 +1,12 @@
-package gui;
+/**
+ * View a day in the calendar.  Basically serves as a wrapper class for an 
+ * instance of DayCanvas.
+ * 
+ * @author Robert Middleton
+ *
+ */
 
+package gui;
 
 import java.awt.BorderLayout;
 import java.awt.GridLayout;
@@ -13,12 +20,6 @@ import javax.swing.JPanel;
 import subsystem.Cakeday;
 import subsystem.Period;
 
-
-/**View a day in the calendar.  Basically serves as a wrapper class for an instance of DayCanvas.
- * 
- * @author rxm6930(Robert Middleton)
- *
- */
 public class DayView implements ActionListener {
 	
 	private JPanel pane;

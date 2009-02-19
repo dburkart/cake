@@ -1,5 +1,10 @@
-package gui;
+/**Handles setting the settings for the user.
+ * 
+ * @author Robert Middleton
+ *
+ */
 
+package gui;
 
 import gui.widgets.FormatBox;
 
@@ -20,11 +25,6 @@ import javax.swing.JTextField;
 
 import subsystem.CalendarSettings;
 
-/**Handles setting the settings for the user.
- * 
- * @author rxm6930 (Robert Middleton)
- *
- */
 public class SettingsDialog implements ActionListener{
 
 	private CalendarSettings settings;

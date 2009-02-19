@@ -1,19 +1,18 @@
-package subsystem;
-
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Stack;
-
 /**
  * Describes an Event. Each event will have a unique ID, which will allow for fast searching
  * and deleting of events. UID's should never be modified by anything, and they should only
  * be created by the EventDatabase.
  * 
- * @author Dana Burkart (dsb3573)
- * @author Hashem Assayari (hya4542)
- * @author Robert Middleton (rxm6930) [Contributor]
- *
+ * @author Dana Burkart
+ * @author Hashem Assayari
+ * @author Robert Middleton [contributor]
  */
+
+package subsystem;
+
+import java.awt.Color;
+import java.util.ArrayList;
+import java.util.Stack;
 
 public class Event {
 	private String title;

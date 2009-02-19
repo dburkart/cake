@@ -1,5 +1,12 @@
-package gui;
+/**
+ *  Views months in the calendar.
+ *  
+ * @author Jack Zhang
+ * @author Dana Burkart
+ * @author Vladimir Hadzhiyski
+ */
 
+package gui;
 
 import javax.swing.*;
 import javax.swing.border.Border;
@@ -20,14 +27,6 @@ import java.awt.event.MouseListener;
 
 import java.util.ArrayList;
 import java.util.List;
-
-/**
- *  Views months in the calendar.
- *  
- * @author jxz8072 (Jack Zhang)
- * @author dsb3573 (Dana Burkart)
- * @author vrh8879 (Vladimir Hadzhiyski)
- */
 
 public class MonthView implements ActionListener, MouseListener {
 	final static boolean shouldFill = true;					//default gridbaglayout constraints

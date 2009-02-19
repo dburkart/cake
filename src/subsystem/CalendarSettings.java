@@ -1,10 +1,10 @@
-package subsystem;
-
 /**
  * Stores all the settings a calendar can have. Is stored at the head of every saved calendar.
  * 
- * @author Dana Burkart (dsb3573)
+ * @author Dana Burkart
  */
+
+package subsystem;
 
 public class CalendarSettings {
 	private String name;

@@ -1,4 +1,3 @@
-package gui.widgets;
 /**
  * This is a widget for selecting a recurring event that is some combination of
  * week days.
@@ -6,10 +5,10 @@ package gui.widgets;
  * @author Dana Burkart
  */
 
+package gui.widgets;
+
 import java.awt.Color;
 import java.awt.Dimension;
-import java.awt.FlowLayout;
-import java.awt.Font;
 import java.awt.GridLayout;
 import java.awt.Insets;
 import java.awt.event.ActionEvent;
@@ -18,7 +17,6 @@ import java.awt.event.ActionListener;
 import javax.swing.BoxLayout;
 import javax.swing.JButton;
 import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.UIManager;
 
 @SuppressWarnings("serial")
@@ -99,25 +97,25 @@ public class WeeklyRecurrenceWidget extends RecurrenceWidget implements ActionLi
 	 * ActionListener, really only manages days being selected.
 	 */
 	public void actionPerformed(ActionEvent e) {
-		if (e.getActionCommand() == "Su") {
+		if (e.getActionCommand().equals("Su")) {
 			checked[0] = !checked[0];
 			toggle(sunday);
-		} else if (e.getActionCommand() == "Mo") {
+		} else if (e.getActionCommand().equals("Mo")) {
 			checked[1] = !checked[1];
 			toggle(monday);
-		} else if (e.getActionCommand() == "Tu") {
+		} else if (e.getActionCommand().equals("Tu")) {
 			checked[2] = !checked[2];
 			toggle(tuesday);
-		} else if (e.getActionCommand() == "We") {
+		} else if (e.getActionCommand().equals("We")) {
 			checked[3] = !checked[3];
 			toggle(wednesday);
-		} else if (e.getActionCommand() == "Th") {
+		} else if (e.getActionCommand().equals("Th")) {
 			checked[4] = !checked[4];
 			toggle(thursday);
-		} else if (e.getActionCommand() == "Fr") {
+		} else if (e.getActionCommand().equals("Fr")) {
 			checked[5] = !checked[5];
 			toggle(friday);
-		} else if (e.getActionCommand() == "Sa") {
+		} else if (e.getActionCommand().equals("Sa")) {
 			checked[6] = !checked[6];
 			toggle(saturday);
 		}

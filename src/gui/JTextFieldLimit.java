@@ -1,13 +1,12 @@
+/**
+ * This is a class which helps limit the number of input characters 
+ * in a JTextField!
+ * 
+ * @author Vladimir Hadzhiyski
+ */
+
 package gui;
 
-/*
- * JTextFieldLimit.java
- * 
- * Description: This is a class which helps limit the number of input characters in a JTextField!
- * 
- * @author vrh8879 (Vladimir Hadzhiyski)
- * 
- */
 import javax.swing.text.*;
 
 /**

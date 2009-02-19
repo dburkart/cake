@@ -1,10 +1,11 @@
-package subsystem;
 /**
  * A data-class that holds a date and a time and provides some basic methods
  * for manipulation.
  * 
- * @author Dana Burkart (dsb3573)
+ * @author Dana Burkart
  */
+
+package subsystem;
 
 public class SimpleDateTime {
 	public SimpleDate date;

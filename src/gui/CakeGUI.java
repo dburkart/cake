@@ -1,6 +1,13 @@
+/**
+ * Creates a GUI for the Cake Calendar program.  Each instance is made by Cake.  
+ * 
+ * @author Robert Middleton
+ * @author Jack Zhang
+ * @author Dana Burkart
+ * @author Vladimir Hadzhiyski
+ */
+
 package gui;
-
-
 
 import java.awt.BorderLayout;
 import java.awt.CardLayout;
@@ -43,14 +50,6 @@ import subsystem.Event;
 import subsystem.Period;
 import subsystem.SimpleDate;
 
-/**
- * Creates a GUI for the Cake Calendar program.  Each instance is made by Cake.  
- * 
- * @author rxm6930 (Robert Middleton)
- * @author jxz8072 (Jack Zhang)
- * @author dsb3573 (Dana Burkart)
- * @author vrh8879 (Vladimir Hadzhiyski)
- */
 public class CakeGUI implements ActionListener,MouseListener{
 	
 	private Cake parent;

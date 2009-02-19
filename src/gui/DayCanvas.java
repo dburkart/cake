@@ -1,5 +1,12 @@
-package gui;
+/**
+ * A DayCanvas is a canvas which shows you the events for the current day.
+ * 
+ * @author Dana Burkart
+ * @author Robert Middleton
+ * 
+ */
 
+package gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -21,13 +28,6 @@ import subsystem.Event;
 import subsystem.Period;
 import subsystem.SimpleTime;
 
-/**
- * A DayCanvas is a canvas which shows you the events for the current day.
- * 
- * @author dsb3573 (Dana Burkart)
- * @author rxm6930 (Robert Middleton) 
- * 
- */
 @SuppressWarnings("serial")
 public class DayCanvas extends JPanel implements MouseListener, 
 MouseMotionListener, MouseWheelListener, ComponentListener{

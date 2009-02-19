@@ -1,3 +1,9 @@
+/**
+ * Widget for selecting the Nth day of every month.
+ * 
+ * @author Robert Middleton
+ */
+
 package gui.widgets;
 import java.awt.FlowLayout;
 
@@ -5,11 +11,6 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 
-/**Widget for selecting the Nth day of every month.
- * 
- * @author rxm6930
- *
- */
 public class NthDayOfMonthRecurrenceWidget extends RecurrenceWidget {
 	
 	private JTextField day;

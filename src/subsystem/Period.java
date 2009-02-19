@@ -1,15 +1,14 @@
-package subsystem;
-
-import java.util.ArrayList;
-
 /**
  * Describes a time frame, or period, which is used throughout the program to 
  * complete tasks.
  * 
- * @author Dana Burkart (dsb3573)
- * @author Hashem Assayari (hya4542)
- *
+ * @author Dana Burkart
+ * @author Hashem Assayari
  */
+
+package subsystem;
+
+import java.util.ArrayList;
 
 public class Period {
 	public SimpleDateTime start, end;

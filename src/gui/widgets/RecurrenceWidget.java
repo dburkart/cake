@@ -1,10 +1,11 @@
-package gui.widgets;
 /**
  * Abstract GUI component for recurrence expression builders.
  * 
- * @author dana
+ * @author Dana Burkart
  *
  */
+
+package gui.widgets;
 
 import javax.swing.JPanel;
 

@@ -1,3 +1,12 @@
+/**
+ * <h1>Cake Calendar</h1>
+ * 
+ * The main class of the Cake Calendar System.  This handles all of the GUI elements.  When you start the Cake Calendar, this makes a new
+ * instance of itself, CakeCal, and CakeGUI.  When adding a new calendar, a new CakeCal and CakeGUI are associated with each other.
+ * 
+ * @author Robert Middleton
+ */
+
 package cake;
 
 import gui.CakeGUI;
@@ -25,14 +34,6 @@ import javax.help.*;
 import subsystem.CakeCal;
 import subsystem.Period;
 
-/**
- * <h1>Cake Calendar</h1>
- * 
- * The main class of the Cake Calendar System.  This handles all of the GUI elements.  When you start the Cake Calendar, this makes a new
- * instance of itself, CakeCal, and CakeGUI.  When adding a new calendar, a new CakeCal and CakeGUI are associated with each other.
- * 
- * @author Robert Middleton
- */
 public class Cake implements WindowListener,ActionListener{
 
 	private  JFrame mainWindow;

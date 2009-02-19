@@ -1,10 +1,11 @@
-package subsystem;
 /**
  * Holds a general time, in hours and minutes and provides some simple methods
  * for manipulating time. Assumes military time.
  * 
- * @author Dana Burkart (dsb3573)
+ * @author Dana Burkart
  */
+
+package subsystem;
 
 public class SimpleTime {
 	public int hour; /**The hour that this SimpleTime represents.*/

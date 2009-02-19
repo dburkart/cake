@@ -1,13 +1,15 @@
+/**
+ * An advanced widget for making your own CRExL expressions.
+ * 
+ * @author Robert Middleton
+ */
+
 package gui.widgets;
+
 import java.awt.FlowLayout;
 
 import javax.swing.JTextField;
 
-/**An advanced widget for making your own CRExL expressions.
- * 
- * @author rxm6930
- *
- */
 public class AdvancedRecurrenceWidget extends RecurrenceWidget {
 
 	private JTextField textBox;

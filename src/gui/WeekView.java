@@ -1,4 +1,13 @@
+/**View a week in the calendar.  Consists of 7 day views put together.
+ * 
+ * @author Robert Middleton
+ * @author Vladimir Hadzhiyski
+ * @author Dana Burkart
+ * 			
+ */
+
 package gui;
+
 import java.awt.BorderLayout;
 import java.awt.Font;
 import java.awt.GridLayout;
@@ -16,13 +25,6 @@ import subsystem.Cakeday;
 import subsystem.Period;
 import subsystem.SimpleDate;
 
-/**View a week in the calendar.  Consists of 7 day views put together.
- * 
- * @author rxm6930(Robert Middleton)
- * @author vrh8879 (Vladimir Hadzhiyski)
- * @author dsb3573 (Dana Burkart)
- * 			
- */
 public class WeekView implements ActionListener {
 
 	private CakeGUI parent;

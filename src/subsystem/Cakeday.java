@@ -1,13 +1,13 @@
-package subsystem;
-import java.util.ArrayList;
-
 /**
  * This class primarily gets the day of the week for any given date. It
  * makes use of the Doomsday Algorithm, which is a fast way of getting the
  * day of a date.
  *
- * @author Dana Burkart (dsb3573)
+ * @author Dana Burkart
  */
+
+package subsystem;
+import java.util.ArrayList;
 
 public class Cakeday {
   public static final String DAYS[] = {"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",

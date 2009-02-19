@@ -1,5 +1,12 @@
-package gui;
+/**
+ * Add event dialog.  Superclass for all of the event dialogs.
+ * 
+ * @author Vladimir Hadzhiyski
+ * @author Robert Middleton
+ *
+ */
 
+package gui;
 
 import gui.widgets.AdvancedRecurrenceWidget;
 import gui.widgets.FormatBox;
@@ -30,13 +37,6 @@ import javax.swing.JTextField;
 import subsystem.Event;
 import subsystem.SimpleDate;
 
-
-/**Add event dialog.  Superclass for all of the event dialogs.
- * 
- * @author vrh8879 (Vladimir Hadzhiyski)
- * @author rxm6930 (Robert Middleton)
- *
- */
 public abstract class EventDialog implements ActionListener {
 	final static boolean shouldFill = true;					//default gridbaglayout constraints
 	final static boolean shouldWeightX = true;
