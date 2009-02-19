@@ -14,12 +14,11 @@
  * GNU General Public License for more details.
  * 
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
 package subsystem;
 
-import java.util.ArrayList;
 import java.util.Set;
 
 /**
@@ -27,15 +26,8 @@ import java.util.Set;
  * @author Dana Burkart
  */
 public class EventTree {
-    public class Node {
-        public int type;
-        public int value;
-        
-        public Set<Node> children;
-        public ArrayList<Event> events;
-    }
     
-    Set<Node> years;
+    Set<EventTreeNode> years;
     
     public Event add(Event e) {
         

@@ -27,7 +27,11 @@ import java.util.ArrayList;
  * @author Dana Burkart
  */
 public class EventTreeNode {
-    public static final int YEAR = 3, MONTH = 2, DAY = 1, CONTAINER = 0; 
+    public static final int ROOT = 4;           // this node is the root
+    public static final int YEAR = 3;           // this node is a year
+    public static final int MONTH = 2;          // this node is a month
+    public static final int DAY = 1;            // this node is a day
+    public static final int CONTAINER = 0;      // exactly like day, but with no value
     
     private int type;
     private int value;
@@ -74,7 +78,8 @@ public class EventTreeNode {
      */
     public Event addEvent(Event e) {
         if (this.type < EventTreeNode.MONTH) {
-            e.setUID(e.getUID()+(value*100)+this.events.size());
+            if (this.type != EventTreeNode.CONTAINER)
+                e.setUID(e.getUID()+(value*100)+this.events.size());
             events.add(e);
             return e;
         } else if (this.type == EventTreeNode.MONTH) {
@@ -126,10 +131,14 @@ public class EventTreeNode {
                     return n[i];
             }
 
-            EventTreeNode k = new EventTreeNode(type+1, val);
+            //-- if we get to this point, we must not have a child with that
+            //-- value, so lets make a new child
+            EventTreeNode k = new EventTreeNode(this.type-1, val);
             children.add(k);
             return k;
         } 
+        //-- we should never get here because getChild() should only be called
+        //-- on EventTreeNodes that are months are years
         return null;
     }
 }
