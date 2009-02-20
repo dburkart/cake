@@ -1,9 +1,20 @@
-/**
- * A DayCanvas is a canvas which shows you the events for the current day.
+/*
+ * Cake Calendar
+ * Copyright (C) 2009  Hashem Assayari, Dana Burkart, Vladimir Hadzhiyski, 
+ * Jack Zhang
  * 
- * @author Dana Burkart
- * @author Robert Middleton
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
  * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ * 
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see http://www.gnu.org/licenses/.
  */
 
 package gui;
@@ -28,6 +39,13 @@ import subsystem.Event;
 import subsystem.Period;
 import subsystem.SimpleTime;
 
+/**
+ * A DayCanvas is a canvas which shows you the events for the current day.
+ * 
+ * @author Dana Burkart
+ * @author Robert Middleton
+ * 
+ */
 @SuppressWarnings("serial")
 public class DayCanvas extends JPanel implements MouseListener, 
 MouseMotionListener, MouseWheelListener, ComponentListener{
