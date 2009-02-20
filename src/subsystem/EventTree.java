@@ -27,10 +27,14 @@ import java.util.Set;
  */
 public class EventTree {
     
-    Set<EventTreeNode> years;
+    EventTreeNode root;
+    
+    public EventTree() {
+        root = new EventTreeNode(EventTreeNode.ROOT);
+    }
     
     public Event add(Event e) {
-        
+        e = root.addEvent(e);
         return e;
     }
 }

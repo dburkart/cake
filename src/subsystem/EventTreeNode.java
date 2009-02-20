@@ -39,6 +39,16 @@ public class EventTreeNode {
     public ArrayList<EventTreeNode> children;
     public ArrayList<Event> events;
     
+    public EventTreeNode(int type) {
+        this.type = type;
+        
+        if (this.type < EventTreeNode.MONTH) {
+            children = new ArrayList<EventTreeNode>();
+        } else {
+            events = new ArrayList<Event>();
+        }
+    }
+    
     public EventTreeNode(int type, int value) {
         this.type = type;
         this.value = value;
@@ -92,6 +102,10 @@ public class EventTreeNode {
             e.setUID(e.getUID() + (value * 1000000));
             e = n.addEvent(e);
             return e;
+        } else if (this.type == EventTreeNode.ROOT) {
+            EventTreeNode n = this.getChild(e.getPeriod().start.date.year);
+            e = n.addEvent(e);
+            return e;
         }
         return e;
     }
@@ -139,6 +153,23 @@ public class EventTreeNode {
         } 
         //-- we should never get here because getChild() should only be called
         //-- on EventTreeNodes that are months are years
+        return null;
+    }
+    
+    private Event getEvent(int UID) {
+        int y = UID / 1000000;
+        int m = (UID % 1000000) / 1000;
+        int d = (UID % 10000) / 100;
+        int n = UID % 100;
+        
+        if (this.type < EventTreeNode.MONTH) {
+            return this.events.get(n);
+        }
+        
+        /* do
+         * stuff
+         */
+        
         return null;
     }
 }
